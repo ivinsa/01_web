@@ -12,9 +12,8 @@ p {
   font-size: 20px;
 }
 div {
-  width: 400px;
-  height: 200px;  
-  padding: 50px;
-  border: 1px solid black;
-  margin-left: 300px;
+  border:#00C 1px dashed;
+		width:500px;
+		height:200px;
+		overflow:auto;
 }
