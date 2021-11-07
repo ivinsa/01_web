@@ -16,5 +16,5 @@ div {
   height: 200px;  
   padding: 50px;
   border: 1px solid black;
-  text-align: right;
+  margin-left: 300px;
 }
