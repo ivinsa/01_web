@@ -40,7 +40,7 @@ section::after {
 
 div {
   border:#00C 1px dashed;
-		width:500px;
-		height:200px;
+		width:300px;
+		height:300px;
 		overflow:auto;
 }
