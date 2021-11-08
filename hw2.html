@@ -1,7 +1,7 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 <head>
-<title>Преподаватели</title>
+<title>CSS Template</title>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
@@ -10,46 +10,52 @@
 }
 
 body {
-  font-family: "Times New Romans", sans-serif;
-}
-h1, h2{
-  color: black;
   text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #f1f1f1;
 }
+
 /* Style the header */
 header {
   background-color: #999;
-  padding: 20px;
+  padding: 10px;
   text-align: center;
   color: black;
 }
 
 /* Create two columns/boxes that floats next to each other */
 nav {
-  float: center;
-  width: 33%;
+  float: left;
+  width: 30%;
   height: 300px; /* only for demonstration, should be removed */
-  background: #888;
-  padding: 50px;
+  background: #ccc;
+  padding: 20px;
 }
 
 /* Style the list inside the menu */
 nav ul {
   list-style-type: none;
-  padding: 20px;
+  padding: 0;
 }
 
 article {
-  float: center;
-  padding: 50px;
-  width: 36%;
-  background-color: white;
+  float: left;
+  padding: 20px;
+  width: 70%;
+  background-color: #f1f1f1;
   height: 300px; /* only for demonstration, should be removed */
+}
+
+/*  */
+section::after {
+  content: "";
+  display: table;
+  clear: both;
 }
 
 /* Style the footer */
 footer {
-  background-color: #777;
+  background-color: #999;
   padding: 10px;
   text-align: right;
   color: black;
@@ -59,23 +65,26 @@ footer {
 @media (max-width: 600px) {
   nav, article {
     width: 100%;
-    height: 200;
+    height: auto;
   }
+}
+
+   div {
+   border: 1px solid black;
+   width:auto;
+   height:100px;
+   overflow:auto;
+
+
 </style>
 </head>
 <body>
 
-<h1>Практическая работа 4</h1>
-<p><h2>Создание динамических HTML-документов с использованием
-технологии Dynamic</h2></p>
-
+<h2>Вариант 17</h2><hr>
+<h2>Создание динамических HTML-документов с использованием технологии Dynamic</h2>
 
 <header>
-  <h2>Отобразить в документе набор картинок в несколько рядов. Предоставить 
-возможность выделения прямоугольной области и выделения (например, 
-цветной рамкой вокруг картинки) тех картинок, которые попали в 
-очерченный мышью прямоугольник. Названия выделенных картинок при 
-щелчке на специальную ссылку объединить в список</h2>
+  <p>Отобразить в документе набор картинок в несколько рядов. Предоставить возможность выделения прямоугольной области и выделения (например, цветной рамкой вокруг картинки) тех картинок, которые попали в очерченный мышью прямоугольник. Названия выделенных картинок при щелчке на специальную ссылку объединить в список</p>
 </header>
 
 <section>
@@ -88,17 +97,15 @@ footer {
   </nav>
   
   <article>
-   <IMG Src="img/book.png" Align="book">
-   <IMG Src="img/clock.png" Align="сlock">
-   <IMG Src="img/key.png" Align="key">
+<div
+</div>
   </article>
-	   
+
 </section>
 
 <footer>
-  <p>Работу выполнил студент второго курса: Ивин Сергей Александрович</p> 
+  <p>Работу выполнил студент второго курса: Ивин Сергей Александрович</p>
 </footer>
 
 </body>
 </html>
-
